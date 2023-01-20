@@ -13,3 +13,6 @@
   * **运行较慢(比Java & C/C#/C++ 慢)**
   * **没人喜欢用[???]**
   * **作者可能不会持续维护(但是会隔一段时间维护)**
+
+# 使用方法
+***运行[main](https://github.com/Buelie/Plinuan/tree/main/Plinuan/main)文件夹下的main.py文件(后续将会把系统发版)***
