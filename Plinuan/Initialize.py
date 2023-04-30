@@ -23,9 +23,7 @@ def db():
                         ii += 1
 
                   lj = os.getcwd()
-                  os.system("cd "+lj)
-                  os.system("D:")
-                  os.system("python \\main\\main.py")
+                  os.system("python system.py")
             elif RegUPI.get() != '123456':
                   print("验证失败")
       elif RegUNI.get() != 'root':
