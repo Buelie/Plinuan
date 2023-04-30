@@ -1,18 +1,34 @@
 import random
 import tkinter
 import time
+import os
 
 def gettime(): #获取时间函数
       var.set(time.strftime("%H:%M:%S"))   # 获取当前时间
       MainForm.after(1000,gettime)   # 每隔1s调用函数 gettime 自身获取时间
 
 def db():
-      if str(RegUNI) == 'root':
-            if str(RegUPI) == '123456':
+      if RegUNI.get() == 'root':
+            if RegUPI.get() == '123456':
                   print("验证通过,正在重启系统")
-            elif str(RegUPI) != '123456':
+
+                  i = 0
+                  while i <= 100:
+                        print("初始化中...["+str(i)+"%]")
+                        i += 1
+
+                  ii = 0
+                  while ii <= 100:
+                        print("加载组件中...["+str(ii)+"%]")
+                        ii += 1
+
+                  lj = os.getcwd()
+                  os.system("cd "+lj)
+                  os.system("D:")
+                  os.system("python \\main\\main.py")
+            elif RegUPI.get() != '123456':
                   print("验证失败")
-      elif str(RegUNI) != 'root':
+      elif RegUNI.get() != 'root':
             print("验证失败")
       else:
             print("验证失败")
